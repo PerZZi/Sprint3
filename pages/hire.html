@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire</title>
+    <link rel="shortcut icon" href="../images-Sprint1/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./services.html">Service</a>
+            <a href="./rating.html">Rating</a>
+            <a href="./hire.html">Hire</a>
+        </nav>
+        <div class="imagen">
+            <img src="../images-Sprint1/logo.png" alt="" id="logo">
+        </div>
+    </header>
+
+    <main>
+
+        <h2>Hire</h2>
+        <h3 id="HireH3">Fill out the form so we can attend your event</h3>
+        <div class="ConteHide">
+
+            <div class="mapa">
+                <h2>Our location</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.0442234197!2d-118.74139949020358!3d34.020608444440924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1697743469372!5m2!1ses-419!2sar"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <form action="../showdata/show_data.html" method="get" target="_blank">
+
+                <label>
+                    Name and Lastname
+                    <input name="NameAndLastaname" id="NameAndLastaname" type="text" required>
+                </label>
+
+                <label>
+                    Phone Number
+                    <input name="number" id="number" type="number" required>
+                </label>
+
+                <label>
+                    Choice service
+                    <select name="ChoiceService" id="ChoiceService" required>
+                        <option value="Wedding">Wedding</option>
+                        <option value="Birthday">Birthday</option>
+                        <option value="Kinds Birthday">Kinds Birthday</option>
+                        <option value="Photo Studio / Outside">Photo Studio / Outside</option>
+                    </select>
+                </label>
+
+                <label>
+                    Choice Date
+                    <input name="date" id="date" type="date" required>
+                </label>
+
+
+                <fieldset>
+                    <legend>Payment Options</legend>
+
+                    <label>
+                        Cash
+                        <input type="radio" name="pay" id="Cash" value="Cash">
+                    </label>
+
+                    <label>
+                        Credit Card
+                        <input type="radio" name="pay" id="Creditcard" value="Creditcard">
+                    </label>
+
+                    <label>
+                        Debit card
+                        <input type="radio" name="pay" id="Debitcard" value="Debitcard">
+                    </label>
+                </fieldset>
+
+                <label id="textArea">
+                    Menssage (Location and Time)
+                    <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
+                </label>
+
+                <div class="enviar">
+                    <label id="Aceptar">
+                        I accept terms and conditions
+                        <input type="checkbox" name="Acepta" id="Acepta" required>
+                    </label>
+                    <input id="botonEnviar" type="submit" value="Send">
+                </div>
+            </form>
+
+        </div>
+    </main>
+
+    <footer>
+        <h3>Created by: Emiliano Esteban Diaz</h3>
+    </footer>
+
+</body>
+
+</html>
